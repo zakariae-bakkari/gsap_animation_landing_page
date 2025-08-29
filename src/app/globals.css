@@ -75,7 +75,7 @@ body {
             @apply font-modern-negra text-3xl -mb-2;
         }
 
-        a {
+        Link {
             @apply cursor-pointer text-nowrap md:text-base text-sm;
         }
 
@@ -124,7 +124,7 @@ body {
                         @apply text-left;
                     }
 
-                    a {
+                    Link {
                         @apply font-semibold opacity-80 2xl:text-start text-center hover:text-yellow;
                     }
                 }
@@ -222,7 +222,7 @@ body {
                 @apply rounded-3xl overflow-hidden h-72 relative;
             }
 
-            img {
+            Image {
                 @apply object-cover w-full h-full;
             }
         }
@@ -234,7 +234,7 @@ body {
                 @apply rounded-3xl overflow-hidden h-72 relative;
             }
 
-            img {
+            Image {
                 @apply object-cover w-full h-full;
             }
         }
@@ -312,7 +312,7 @@ body {
         .cocktail {
             @apply flex-center mt-10;
 
-            img {
+            Image {
                 @apply object-contain h-[60vh];
             }
         }
