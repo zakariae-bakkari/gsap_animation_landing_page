@@ -19,6 +19,7 @@ export default function Hero() {
       type: "chars, words, lines",
     });
 
+	// Apply text-gradient class once before animating
     heroSplit.chars.forEach((char) => char.classList.add("text-gradient"));
 
     gsap.from(heroSplit.chars, {
@@ -47,15 +48,16 @@ export default function Hero() {
       .to(".right-leaf", { y: 200 }, 0)
       .to(".left-leaf", { y: -200 }, 0);
 
-    const startValue = isMobile ? "top top" : "top top";
-    const endValue = isMobile ? "+=150%" : "+=150%";
+    const startValue = isMobile ? "top 50%" : "center 60%";
+    const endValue = isMobile ? "120% top" : "bottom top";
 
-    videoTimeLineRef.current = gsap.timeline({
+    const videotl = gsap.timeline({
       scrollTrigger: {
-        trigger: "#hero",
-        start: startValue,
-        end: endValue,
-        scrub: 1,
+         trigger: "video",
+         start: startValue,
+         end: endValue,
+         scrub: true,
+         pin: true,
       },
     });
 
@@ -64,11 +66,9 @@ export default function Hero() {
       videoRef.current.load();
 
       videoRef.current.onloadedmetadata = () => {
-        if (videoTimeLineRef.current && videoRef.current) {
-          videoTimeLineRef.current.to(videoRef.current, {
+        if ( videoRef.current) {
+         videotl.to(videoRef.current, {
             currentTime: videoRef.current.duration || 0,
-            ease: "none",
-            duration: 1,
           });
         }
       };
@@ -128,7 +128,7 @@ export default function Hero() {
           </div>
         </div>
       </section>
-      <div className="video fixed inset-0">
+      <div className="video absolute inset-0">
         <video
           ref={videoRef}
           src="/videos/output.mp4"
