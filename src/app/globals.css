@@ -222,7 +222,7 @@ body {
                 @apply rounded-3xl overflow-hidden h-72 relative;
             }
 
-            Image {
+            image {
                 @apply object-cover w-full h-full;
             }
         }
