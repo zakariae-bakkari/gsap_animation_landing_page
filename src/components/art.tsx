@@ -22,7 +22,12 @@ export const Art = () => {
     });
 
     maskTimeline
-      .to(".will-fade", { opacity: 0, stagger: 0.2, ease: "power1.inOut" })
+      .to(".will-fade", {
+        opacity: 0,
+        stagger: 0.2,
+        ease: "power1.inOut",
+        display: "none",
+      })
       .to(".masked-img", {
         scale: 1.3,
         maskPosition: "center",
@@ -61,7 +66,7 @@ export const Art = () => {
             alt="cup"
             width={200}
             height={100}
-            className="fade-on absolute opacity-0  top-96 right-2 -rotate-[7deg]"
+            className="fade-on absolute opacity-0  top-96 right-2 -rotate-[7deg] max-sm:hidden"
           />
           <div className="cocktail-img">
             <Image
@@ -91,7 +96,7 @@ export const Art = () => {
             alt="cup"
             width={200}
             height={100}
-            className="fade-on absolute opacity-0 top-44 left-2"
+            className="fade-on absolute opacity-0 max-sm:hidden top-44 left-2"
           />
         </div>
         <div className="masked-container">

@@ -53,7 +53,7 @@ function Cocktails() {
         id="c-right-leaf"
       />
       <div className="list">
-        <div className="popular">
+        <div className="popular ml-2.5">
           <h2>Most popular cocktails</h2>
           <ul>
             {cocktailLists.map((cocktail) => (
@@ -69,7 +69,7 @@ function Cocktails() {
             ))}
           </ul>
         </div>
-        <div className="loved">
+        <div className="loved mr-2.5">
           <h2>Most popular cocktails</h2>
           <ul>
             {cocktailLists.map((cocktail) => (
