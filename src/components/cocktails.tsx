@@ -27,6 +27,14 @@ function Cocktails() {
         x: 100,
         y: 100,
       });
+      gsap.from("ul li,h2",{
+        yPercent: 100,
+        opacity: 0,
+        stagger: 0.1,
+        scrollTrigger: {
+          trigger: "#cocktails",
+        }
+      })
   }, []);
   return (
     <section id="cocktails" className="noisy">

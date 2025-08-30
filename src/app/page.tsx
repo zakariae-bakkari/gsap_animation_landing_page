@@ -1,6 +1,7 @@
 import About from '@src/components/about';
 import { Art } from '@src/components/art';
 import Cocktails from '@src/components/cocktails';
+import { Contact } from '@src/components/contact';
 import Hero from '@src/components/hero';
 import { Menu } from '@src/components/menu';
 import { Navbar } from '@src/components/navbar';
@@ -18,6 +19,7 @@ export default function Home() {
       <About />
       <Art />
       <Menu />
+      <Contact />
     </main>
   );
 }

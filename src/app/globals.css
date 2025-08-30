@@ -89,7 +89,7 @@ body {
     }
 
     #hero {
-        @apply relative z-10 min-h-dvh w-full border border-transparent;
+        @apply relative z-10 min-h-dvh w-full border border-transparent ;
 
         h1 {
             @apply md:mt-32 mt-40 text-8xl md:text-[20vw] leading-none text-center font-modern-negra;
@@ -357,7 +357,7 @@ body {
         }
 
         .content {
-            @apply container mx-auto lg:py-14 2xl:py-32 py-16 flex flex-col justify-between gap-10 min-h-dvh;
+            @apply container mx-auto py-3 flex flex-col justify-between gap-10 min-h-dvh;
 
             h2 {
                 @apply lg:text-6xl 2xl:text-8xl text-5xl font-modern-negra md:translate-y-0 translate-y-5;

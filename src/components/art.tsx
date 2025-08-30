@@ -30,6 +30,12 @@ export const Art = () => {
         duration: 1,
         ease: "power1.inOut ",
       })
+      .to(".fade-on", {
+        opacity: 1,
+        stagger: 0.3,
+        y: 40,
+        ease: "power1.inOut",
+      })
       .to("#masked-content", { opacity: 1, duration: 1, ease: "power1.inOut" });
   }, []);
   return (
@@ -43,13 +49,20 @@ export const Art = () => {
                 <Image
                   src={"/images/check.png"}
                   alt={"check"}
-                  width={30}
-                  height={30}
+                  width={17}
+                  height={17}
                 />
                 <p>{feature}</p>
               </li>
             ))}
           </ul>
+          <Image
+            src={"/images/cup-2.png"}
+            alt="cup"
+            width={200}
+            height={100}
+            className="fade-on absolute opacity-0  top-96 right-2 -rotate-[7deg]"
+          />
           <div className="cocktail-img">
             <Image
               src="/images/under-img.jpg"
@@ -66,13 +79,20 @@ export const Art = () => {
                 <Image
                   src={"/images/check.png"}
                   alt={"check"}
-                  width={30}
-                  height={30}
+                  width={17}
+                  height={17}
                 />
                 <p>{feature}</p>
               </li>
             ))}
           </ul>
+          <Image
+            src={"/images/drink4.png"}
+            alt="cup"
+            width={200}
+            height={100}
+            className="fade-on absolute opacity-0 top-44 left-2"
+          />
         </div>
         <div className="masked-container">
           <h2 className="will-fade">Sip-Worthy Perfection</h2>
