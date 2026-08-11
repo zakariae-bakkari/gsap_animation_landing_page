@@ -1,3 +1,5 @@
+
+
 # Mokhito Landing Page with GSAP Animation
 
 This project is a tutorial for mastering JavaScript by building the **[Mokhito Landing Page](https://gsap-animation-landing-page-beige.vercel.app/)** featuring engaging GSAP animations. The code is designed for educational purposes, helping you learn advanced animation techniques and modern web development with Next.js.
@@ -9,6 +11,18 @@ This project is a tutorial for mastering JavaScript by building the **[Mokhito L
 - **Tutorial Approach:** The code is structured to guide you step-by-step towards JavaScript mastery.
 
 ## Getting Started
+
+First, install the project dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
 
 To run the development server:
 
